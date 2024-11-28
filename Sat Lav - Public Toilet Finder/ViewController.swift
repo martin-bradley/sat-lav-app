@@ -47,6 +47,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             }
         }
     }
+    
+    
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let location = locations.first else { return }
@@ -196,5 +198,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         destination.name = "Public Toilet"
         MKMapItem.openMaps(with: [destination], launchOptions: [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking])
     }
+    
+    
 }
 
