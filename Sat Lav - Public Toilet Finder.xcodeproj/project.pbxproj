@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5CB652F82CF7A840008680CC /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CB652F72CF7A840008680CC /* MapKit.framework */; };
+		5CB652FB2CF7CF18008680CC /* SwiftCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 5CB652FA2CF7CF18008680CC /* SwiftCSV */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5CB652D92CF7A81D008680CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		5CB652C22CF7A81A008680CC /* Sat Lav - Public Toilet Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sat Lav - Public Toilet Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB652D82CF7A81D008680CC /* Sat Lav - Public Toilet FinderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sat Lav - Public Toilet FinderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CB652E22CF7A81D008680CC /* Sat Lav - Public Toilet FinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sat Lav - Public Toilet FinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CB652F72CF7A840008680CC /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -65,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CB652F82CF7A840008680CC /* MapKit.framework in Frameworks */,
+				5CB652FB2CF7CF18008680CC /* SwiftCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +99,7 @@
 				5CB652C42CF7A81A008680CC /* Sat Lav - Public Toilet Finder */,
 				5CB652DB2CF7A81D008680CC /* Sat Lav - Public Toilet FinderTests */,
 				5CB652E52CF7A81D008680CC /* Sat Lav - Public Toilet FinderUITests */,
+				5CB652F62CF7A840008680CC /* Frameworks */,
 				5CB652C32CF7A81A008680CC /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +112,14 @@
 				5CB652E22CF7A81D008680CC /* Sat Lav - Public Toilet FinderUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		5CB652F62CF7A840008680CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CB652F72CF7A840008680CC /* MapKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +142,7 @@
 			);
 			name = "Sat Lav - Public Toilet Finder";
 			packageProductDependencies = (
+				5CB652FA2CF7CF18008680CC /* SwiftCSV */,
 			);
 			productName = "Sat Lav - Public Toilet Finder";
 			productReference = 5CB652C22CF7A81A008680CC /* Sat Lav - Public Toilet Finder.app */;
@@ -208,6 +226,9 @@
 			);
 			mainGroup = 5CB652B92CF7A81A008680CC;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5CB652F92CF7CF18008680CC /* XCRemoteSwiftPackageReference "SwiftCSV" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5CB652C32CF7A81A008680CC /* Products */;
 			projectDirPath = "";
@@ -289,6 +310,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RWMF2JX3NR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sat Lav - Public Toilet Finder/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -316,6 +338,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RWMF2JX3NR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Sat Lav - Public Toilet Finder/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -563,6 +586,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CB652F92CF7CF18008680CC /* XCRemoteSwiftPackageReference "SwiftCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/naoty/SwiftCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CB652FA2CF7CF18008680CC /* SwiftCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CB652F92CF7CF18008680CC /* XCRemoteSwiftPackageReference "SwiftCSV" */;
+			productName = SwiftCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5CB652BA2CF7A81A008680CC /* Project object */;
 }
